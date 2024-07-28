@@ -1,0 +1,38 @@
+.faq {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .faq-toggle {
+    font-size: 18px;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .faq-answer.open {
+    max-height: 1000px; /* Or any large value */
+    padding: 10px 0;
+  }
+  
